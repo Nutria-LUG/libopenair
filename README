@@ -1,0 +1,20 @@
+LIB OPEN AIR
+============
+
+ This is the main library used in open air system.
+
+# USAGE
+ After installation you can import the header files:
+  *  libopenair/configuration.hh
+  *  libopenair/curl_service_connector.hh
+
+ To compile it you must link one of the shared or static
+ libary.
+
+ ## SHARED
+  Use the g++ -l option:
+   > g++ my_prog.cc -o my_prog -lopenair
+
+ ## STATIC
+  Use the g++ -l: option:
+   > g++ my_prog.cc -o my_prgo -l:libopenair.a

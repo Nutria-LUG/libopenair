@@ -1,0 +1,22 @@
+INSTALLATION
+============
+
+## REQUIREMENTS
+
+To install libopenair you need libcurl and dev tools installed in your
+system:
+  > sudo apt install build-essential libcurl
+
+## BUILD
+
+ Give following commands:
+   > ./configure
+   > make
+   > sudo make install
+
+## REFRESH DYNAMIC CAHCE
+
+ If you want link it as dynamic library (-l g++ flag), you
+ must refresh shared library cache:
+
+   > sudo /sbin/ldconfig -v
