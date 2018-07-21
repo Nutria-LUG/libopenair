@@ -52,14 +52,14 @@ namespace __CURL_SERVICE_CONNECTOR_INTERNAL__ {
         return std::move(response);
     }
 
-    void prepare_post_call(CURL *curl) {
-        
+    void prepare_post_call(CURL *curl) {        
         curl_easy_setopt(curl, CURLOPT_POST, 1);
         struct curl_slist *headers = NULL;
         headers = curl_slist_append(headers,
                                     "Content-Type: application/json");
         curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
     }
+
     void prepare_post_call(CURL *curl, const std::string& json) {
         prepare_post_call(curl);
         curl_easy_setopt(curl, CURLOPT_POSTFIELDS, json.c_str());

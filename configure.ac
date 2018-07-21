@@ -9,7 +9,7 @@ AC_PROG_MAKE_SET
 AC_PROG_CXX
 LT_INIT
 AC_PROG_LIBTOOL
-
+AC_CHECK_HEADERS([curl/curl.h])
 
 AC_CONFIG_FILES([
         Makefile
