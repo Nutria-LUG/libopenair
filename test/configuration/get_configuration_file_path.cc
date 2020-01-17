@@ -28,7 +28,7 @@
 #include <string>
 #include <CppUTest/TestHarness.h>
 #include <CppUTestExt/MockSupport.h>
-#include "../../src/configuration.hh"
+#include "../../src/libopenair/configuration.hh"
 
 
 TEST_GROUP(GetConfigurationFilePathTest) {

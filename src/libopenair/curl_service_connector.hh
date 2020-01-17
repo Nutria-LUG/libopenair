@@ -79,7 +79,7 @@ namespace openair {
          * Initialize the connector with the address passed as
          * parameter.
          */    
-        CurlServiceConnector(const std::string& address);
+        explicit CurlServiceConnector(const std::string& address);
 
         /*! Default destructor. */
         ~CurlServiceConnector();
